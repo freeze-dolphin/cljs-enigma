@@ -1,4 +1,4 @@
-(ns starter.browser)
+(ns app.browser)
 
 ;; start is called by init and after code reloading finishes
 (defn ^:dev/after-load start []
@@ -14,3 +14,6 @@
 ;; this is called before any code is reloaded
 (defn ^:dev/before-load stop []
   (js/console.log "stop"))
+
+(defn click []
+  (js/alert "Hello, ClojureScript!"))
